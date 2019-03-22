@@ -7885,7 +7885,7 @@ function write_ws_xml_data(ws, opts, idx, wb) {
     if(height > -1) { params.ht = height; params.customHeight = 1;}
     if(row.level){params.outlineLevel = row.level;}
   }
-o[o.length] = {writextag('row',r.join(""),params};
+o[o.length] = (writextag('row',r.join(""),params));
 }
     if (r.length > 0) o[o.length] = (writextag('row', r.join(""), {r: rr}));
   }
