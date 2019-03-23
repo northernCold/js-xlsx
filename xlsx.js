@@ -7864,7 +7864,7 @@ var parse_ws_xml_data = (function parse_ws_xml_data_factory() {
 })();
 
 function write_ws_xml_data(ws, opts, idx, wb) {
-  var o = [], r = [], range = safe_decode_range(ws['!ref']), cell, ref, rr = "", cols = [], R, C;
+  var o = [], r = [], range = safe_decode_range(ws['!ref']), cell, ref, rr = "", cols = [],row,rows=[] R, C;
   for (C = range.s.c; C <= range.e.c; ++C) cols[C] = encode_col(C);
   for (R = range.s.r; R <= range.e.r; ++R) {
     r = [];
